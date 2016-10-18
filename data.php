@@ -40,14 +40,14 @@
 	
 	//saan kõik auto andmed
 	$carData = getAllCars();
-	echo "<pre>";
-	var_dump($carData);
-	echo "</pre>";
+	//echo "<pre>";
+	//var_dump($carData);
+	//echo "</pre>";
 ?>
 <h1>Data</h1>
 <?=$msg;?>
 <p>
-	Tere tulemast <?=$_SESSION["userEmail"];?>!
+	Tere tulemast <a href="user.php"><?=$_SESSION["userEmail"];?>!</a>
 	<a href="?logout=1">Logi välja</a>
 </p>
 
